@@ -1,4 +1,4 @@
-~#include "3-calc.h"
+#include "3-calc.h"
 
 /**
  * main - check the code for Holberton School students.
@@ -37,4 +37,4 @@ int main(int argc, char *argv[])
 
 	printf("%d\n", operation(a, b));
 	return (0);
-}                                                                                                                       ~                                                                                                                       ~
+}                                                                                                                       ~
