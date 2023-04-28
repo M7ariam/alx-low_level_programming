@@ -7,12 +7,9 @@ section .text
     extern printf
 
 main: 
-    push message
-    mov   edi, formata
-    xor   eax, eax
-    call printf
-    xor  eax, eax
-    ret
-
-format:
-    db "%s"
+          mov   edi, format
+	  xor   eax, eax
+	  call  printf
+	  mov 	eax, 0
+	  ret
+format: db `Hello, Holberton\n`,0
