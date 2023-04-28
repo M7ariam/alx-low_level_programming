@@ -16,4 +16,3 @@ main:
 
 format:
     db "%s"
-
