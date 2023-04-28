@@ -6,10 +6,10 @@ section .text
 
     extern printf
 
-main:
+main: 
     push message
-    mov  rdi, format
-    xor  rax, rax
+    mov   edi, formata
+    xor   eax, eax
     call printf
     xor  eax, eax
     ret
