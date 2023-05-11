@@ -58,6 +58,9 @@ void print_elf_header(Elf64_Ehdr *header)
         case ELFOSABI_NETBSD:
             printf("UNIX - NetBSD\n");
             break;
+        case ELFOSABI_SOLARIS:
+            printf("UNIX - Solaris\n");
+            break;
         default:
             printf("Unknown\n");
             break;
@@ -112,8 +115,5 @@ int main(int argc, char *argv[])
         header.e_ident[EI_MAG1] != ELFMAG1 ||
         header.e_ident[EI_MAG2] != ELFMAG2 ||
         header.e_ident[EI_MAG3] != ELFMAG3) {
-        print_error("File is not an ELF file");
-    }
-
-    print_elf_header(&
+        print_error("File is not
 
